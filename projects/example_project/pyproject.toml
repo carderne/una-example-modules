@@ -1,0 +1,23 @@
+[project]
+name = "example_project"
+version = "0.1.0"
+description = ""
+authors = []
+dependencies = ["cowsay-python==1.0.2"]
+requires-python = ">= 3.11"
+
+[build-system]
+requires = ["hatchling", "hatch-una"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build]
+packages = ["una_example_modules"]
+
+[tool.hatch.build.hooks.una-build]
+
+[tool.una.libs]
+"../../apps/una_example_modules/printer" = "una_example_modules/printer"
+"../../libs/una_example_modules/greeter" = "una_example_modules/greeter"
