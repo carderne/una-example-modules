@@ -12,4 +12,5 @@
 -e file:.
 -e file:projects/example_project
 cowsay-python==1.0.2
+    # via example-project
     # via una-example-modules
